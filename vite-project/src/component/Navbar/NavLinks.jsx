@@ -53,6 +53,8 @@ const NavLinks = () => {
                       <div className='bg-slate-50 p-3.5 grid grid-cols-2 gap-2 rounded-lg shadow-2xl'>
                         {
                           link.sublinks.map((mysublinks)=>(
+
+                        
                             <div>
                               {mysublinks.sublink.map(slink=>(
                                 <li className='text-sm text-gray-900 my-2.5'>
