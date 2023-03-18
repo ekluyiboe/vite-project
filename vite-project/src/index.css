@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.logo {
+    margin-left: -304px;
+    font-size: 2.8rem;
+}
+.learnmore {
+    margin-left: -585px;
+    width: 141px;
+    margin-top: 27px;
+}
+.md\:bg-top {
+   
+    background-position: top;
+    width: 388px;
+    margin-left: 741px;
+    height: 518px;
+    object-fit: contain;
+    margin-top: 73px;
+}
+
+.md\:text-5xl {
+    font-size: 4rem;
+    line-height: 1;
+    margin-top: 61px;
+}
+.fashion{
+    margin-top: 93px;
+    margin-left: -587px;
+}
+.big-text{
+    margin-left: -592px;
+    padding-top: 96px;
+    line-height: 1;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: -58px;
+}
+.footer-logo {
+    margin-left: -584px;
+    margin-top: 108px;
+    height: 23px;
+}
+
+.links {
+    margin-left: -615px;
+}
+.bg-white {
+    --tw-bg-opacity: 1;
+    width: 100%;
+    position: absolute;
+    top: -6;
+    margin-left: -604px;
+    margin-top: -80px;
+}
+.login {
+    margin-left: -76px;
+    margin-top: -38px;
+}
+
+
