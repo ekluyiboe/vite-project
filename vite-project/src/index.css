@@ -22,6 +22,22 @@
     object-fit: contain;
     margin-top: 73px;
 }
+.careers {
+    margin-left: 39px;
+    padding-top: 1.8rem;
+    padding-left: 2.25rem;
+}
+.px-1 {
+    padding-left: 2.25rem;
+    padding-right: 0.25rem;
+}
+.py-7 {
+    padding-top: 1.8rem;
+    padding-bottom: 1.75rem;
+}
+.about {
+    margin-left: 110px;
+}
 
 .md\:text-5xl {
     font-size: 4rem;
@@ -60,6 +76,53 @@
 .login {
     margin-left: -76px;
     margin-top: -38px;
+}
+@media (max-width: 360px){
+    .logo {
+        margin-left: 980px;
+        font-size: 2.8rem;
+    }
+    .login {
+        display: none;
+    }
+    .md\:bg-top {
+        margin-left: 0px;
+        width: 359px;
+        height: 268px;
+        object-fit: contain;
+        background-image: url(assets/image-hero-mobile.png);
+    }
+    .big-text {
+        margin-left: 45px;
+        padding-top: 301px;
+        line-height: 1;
+        font-size: 28px;
+        font-weight: 600;
+        
+    }
+    .register {
+        --tw-text-opacity: 1;
+        color: rgb(156 163 175 / var(--tw-text-opacity));
+        display: none;
+    }
+    
+    .learnmore {
+        margin-left: 100px;
+        width: 141px;
+        margin-top: 27px;
+    }
+    .fashion {
+        margin-top: 76px;
+        font-size: 15px;
+        margin-left: 3px;
+        text-align: center;
+    }
+    .footer-logo {
+        margin-left: 6px;
+        margin-top: 108px;
+        height: 19px;
+        flex-direction: row;
+    }
 }
 
 

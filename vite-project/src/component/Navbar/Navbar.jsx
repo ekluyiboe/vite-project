@@ -11,10 +11,16 @@ const Navbar = () => {
             <div>
                 <h1 className='logo'>snap</h1>
             </div>
-            <ul className='links flex  items-center gap-8 text-gray-400  '>
+        
+            <ul className='links md:flex hidden uppercase  items-center gap-8 text-gray-400  '>
                 <li>
-                    <Link to="/" className="py-7 px-1 inline-block ">
-                       
+                   
+                    <Link to="/" className=" about  hover:text-stone-900 py-7 px-1 inline-block ">
+                    About
+                    </Link>
+
+                    <Link to="/" className=" carrers  hover:text-stone-900 py-7 px-1 inline-block ">
+                    Careers
                     </Link>
                 </li>
                 
@@ -26,8 +32,12 @@ const Navbar = () => {
                 <Login/>
             </div>
         </div>
+       
     </nav>
+    
   )
+  
 }
+
 
 export default Navbar

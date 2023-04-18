@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 
 
+
 const NavLinks = () => {
     const links =[ 
       { name: "Features", submenu: true, sublinks:[
@@ -28,7 +29,8 @@ const NavLinks = () => {
       },
      ],
     }, 
-     { name: "Careers" }, { name: "About" }];
+    
+     ];
   return (
     <>
     {links.map((link) => (
@@ -70,9 +72,14 @@ const NavLinks = () => {
                 )}
             </div>
         </div>
+        
     ))}
+    
     </>
+    
   );
+  
 };
+
 
 export default NavLinks
