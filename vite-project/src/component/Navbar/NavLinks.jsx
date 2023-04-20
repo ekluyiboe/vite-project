@@ -21,9 +21,9 @@ const NavLinks = () => {
       { name: "Company", submenu: true, sublinks:[
         {
         sublink:[
-          {name:'T-shirt',link:"/"},
-          {name:'T-shirt',link:"/"},
-          {name:'T-shirt',link:"/"},
+          {name:'History',link:"/"},
+          {name:'Our Team',link:"/"},
+          {name:'Blog',link:"/"},
           
         ],
       },
@@ -36,7 +36,7 @@ const NavLinks = () => {
     {links.map((link) => (
         <div>
             <div className='px-3 text-left md:cursor-pointer group hover:text-stone-900'>
-                <h1>
+                <h1 className='py-7'>
                   {link.name}
                   <span className='text-xl md:mt-1 md:ml-2 inline '>
                   <ion-icon

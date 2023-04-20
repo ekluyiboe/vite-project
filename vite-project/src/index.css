@@ -82,8 +82,35 @@
         margin-left: 980px;
         font-size: 2.8rem;
     }
-    .login {
-        display: none;
+    /*this element.style is for the hamburger menu styling*/
+    element.style {
+        margin-top: -104px;
+        margin-left: 139px;
+    }
+    .pl-4 {
+        padding-left: 2rem;
+        position: fixed;
+        margin-right: -17px;
+        /* width: 65px; */
+        max-width: 384px;
+    }
+    .py-24 {
+        padding-top: 0rem;
+        padding-bottom: 6rem;
+        width: 213px;
+        margin-left: 203px;
+    }
+    .left-10 {
+        left: -3.5rem;
+    }
+     /* hamburger menu styling ends above*/
+     .login {
+        margin-left: 58px;
+        padding-top: 123px;
+        /* margin-top: 214px; */
+        max-height: 73px;
+        position: fixed;
+        color: currentcolor;
     }
     .md\:bg-top {
         margin-left: 0px;
@@ -100,10 +127,16 @@
         font-weight: 600;
         
     }
+    .big-text br {
+       display: none;
+    }
     .register {
         --tw-text-opacity: 1;
         color: rgb(156 163 175 / var(--tw-text-opacity));
-        display: none;
+        margin-top: 132px;
+        max-width: 125px;
+        margin-left: 18px;
+        color: currentcolor;
     }
     
     .learnmore {
@@ -119,7 +152,7 @@
     }
     .footer-logo {
         margin-left: 6px;
-        margin-top: 108px;
+        margin-top: 49px;
         height: 19px;
         flex-direction: row;
     }
