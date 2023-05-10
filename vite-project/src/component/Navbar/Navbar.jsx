@@ -34,19 +34,20 @@ const Navbar = () => {
                 <Login/>
             </div>
             {/* Mobile nav */}
-        <ul
-          className={`
-          md:hidden bg-gray-50 fixed w-full top-0 overflow-y-auto bottom-0 py-24 pl-4
-          duration-500 ${open ? "left-10" : "left-[-14%]"}
-        `}
-        >
-          <div className=" hamburger flex items-center font-medium justify-around">
+            <div className=" hamburger flex items-center font-medium justify-around">
           <div className="z-50 p-5 md:w-auto w-full flex justify-between">
           <div className="text-3xl md:hidden" onClick={() => setOpen(!open)}>
             <ion-icon name={`${open ? "close" : "menu"}`}></ion-icon>
           </div>
           </div>
           </div>
+        <ul
+          className={`
+          md:hidden bg-gray-50 fixed w-full top-0 overflow-y-auto bottom-0 py-24 pl-4
+          duration-500 ${open ? "left-10" : "left-[-14%]"}
+        `}
+        >
+         
           <li>
             <Link to="/" className="py-7 px-3 inline-block">
               About
@@ -63,7 +64,7 @@ const Navbar = () => {
             <Button />
 
           </div>
-        </ul>
+  </ul>
         </div>
     </nav>
   );

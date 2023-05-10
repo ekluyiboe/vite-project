@@ -8,6 +8,18 @@
     margin-left: -304px;
     font-size: 2.8rem;
 }
+.register{
+    position: static;
+    margin-right: -118px;
+}
+/*styling the dropdown button*/
+.icon-inner, .ionicon, svg {
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin-top: 3px;
+}
+/* end of styling the dropdown button*/
 .learnmore {
     margin-left: -585px;
     width: 141px;
@@ -63,23 +75,24 @@
 }
 
 .links {
-    margin-left: -615px;
+    margin-left: -493px;
 }
 .bg-white {
     --tw-bg-opacity: 1;
     width: 100%;
     position: absolute;
     top: -6;
-    margin-left: -604px;
-    margin-top: -80px;
+    margin-left: -535px;
+    margin-top: -84px;
 }
+
 .login {
     margin-left: -76px;
     margin-top: -38px;
 }
 @media (max-width: 360px){
     .logo {
-        margin-left: 980px;
+        margin-left: 844px;
         font-size: 2.8rem;
     }
     /*this element.style is for the hamburger menu styling*/
@@ -100,8 +113,18 @@
         width: 213px;
         margin-left: 203px;
     }
+    .p-5 {
+        padding: 1.25rem;
+        /* margin-left: -4px; */
+        padding-left: 406px;
+        position: fixed;
+        padding-top: 31px;
+    }
     .left-10 {
         left: -3.5rem;
+    }
+    .left-\[-14\%\] {
+        left: 97%;
     }
      /* hamburger menu styling ends above*/
      .login {
@@ -118,6 +141,17 @@
         height: 268px;
         object-fit: contain;
         background-image: url(assets/image-hero-mobile.png);
+    }
+    .absolute {
+        position: relative;
+    }
+    .text-xl {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        margin-bottom: -217px;
+        margin-left: 10px;
+        padding-top: -284px;
+        position: fixed;
     }
     .big-text {
         margin-left: 45px;
