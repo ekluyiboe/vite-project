@@ -1,6 +1,8 @@
-import React from "react";
+import React, { createContext } from "react";
 import Navbar from "./component/Navbar/Navbar";
 import LearnMore from "./component/Navbar/LearnMore";
+
+
 
 
 
@@ -9,14 +11,12 @@ const App = () => {
     <section
    
       className="h-screen bg-Hero bg-cover 
-      font-[Poppins] md:bg-top bg-center"
+      font-[Poppins] md:bg-top bg-center dark:text-gray-100 dark:bg-slate-900 duration-100"
     >
+      
      <Navbar/>
-    
-
+  
       <div>
-    
-
       <h1 className="big-text">
           Make <br />remote work
         </h1>
@@ -35,8 +35,9 @@ const App = () => {
           <img  src="/client-maker.svg"  alt="Vite logo" />
         </div>
     </section>
-    
+   
   );
 };
+
 
 export default App;

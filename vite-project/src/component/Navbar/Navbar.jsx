@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom'
 import Button from './Button'
 import NavLinks from './NavLinks'
@@ -6,6 +6,33 @@ import Login from "./Login";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [theme, setTheme] = useState("light");
+  const element = document.documentElement
+  const options =[
+    {
+      icon: "sunny",
+      text: "light",
+    },
+    {
+      icon: "moon",
+      text: "dark",
+    },
+    
+  ]; 
+
+  useEffect(()=>{
+    switch (theme) {
+      case "dark":
+        element.classList.add("dark")
+
+        break;
+      case "light":
+        element.classList.remove("dark")
+        break
+    default:
+      break;
+    }
+  },[theme]);
   return (
     <nav className="bg-white"> 
         <div className='flex items-center font-medium justify-around'>
@@ -27,6 +54,16 @@ const Navbar = () => {
                 </li>
                 
                 <NavLinks/>
+                <div className="fixed top-5 right-10 duration-100 dark:bg-slate-700 bg-gray-100 rounded">
+                  {
+                    options?.map(opt=>(
+                      <button key={opt.text} onClick={() => setTheme(opt.text)} className={`w-8 h-8 leading-9 text-xl rounded-full m-1 ${theme === opt.text && "text-sky-600"}`}>
+                      <ion-icon name={opt.icon}></ion-icon>
+                      </button>
+                    ))
+                  }
+                 
+                 </div>
             </ul>
             <div className="md:block hidden">
             
