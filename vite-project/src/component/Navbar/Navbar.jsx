@@ -3,8 +3,17 @@ import { Link } from 'react-router-dom'
 import Button from './Button'
 import NavLinks from './NavLinks'
 import Login from "./Login";
+import Languageoption from './language-dropdown'
+import { useTranslation } from 'react-i18next';
+import i18next from 'i18next';
+
+
 
 const Navbar = () => {
+  const {t} = useTranslation();
+  const handleClick=(e)=>{
+    i18next.changeLanguage(e.target.value)
+  }
   const [open, setOpen] = useState(false);
   const [theme, setTheme] = useState("light");
   const element = document.documentElement
@@ -43,16 +52,17 @@ const Navbar = () => {
         
             <ul className='links md:flex hidden uppercase  items-center gap-8 text-gray-400  '>
                 <li>
-                   
+               
                     <Link to="/" className=" about  hover:text-stone-900 py-7 px-1 inline-block ">
-                    About
+                    {t('About')}
                     </Link>
 
                     <Link to="/" className=" carrers  hover:text-stone-900 py-7 px-1 inline-block ">
-                    Careers
+                    {t('Carrers')}
                     </Link>
                 </li>
-                
+                <Languageoption onChange={(e)=> handleClick(e)}/>
+
                 <NavLinks/>
                 <div className="fixed top-5 right-10 duration-100 dark:bg-slate-700 bg-gray-100 rounded">
                   {
